@@ -1,0 +1,298 @@
+// main: style.less
+
+// Стили header-excursions
+
+.header-excursions {
+    background-image: url(/img/excursions__mobile__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 162px;
+
+    .header-logo {
+        margin-bottom: 79px;
+    }
+
+    .header__title {
+        text-align: center;
+    }
+
+    .menu__nav {
+        .menu__list {
+            display: block;
+        }
+    }
+}
+
+// Стили excursions-content 
+
+.excursions-content {
+    background-color: @white;
+    padding: 60px 0 150px;
+
+    .search {
+        background-color: @white;
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+        padding: 60px 10px 70px 9px;
+        margin-bottom: 60px;
+
+        .excursions-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 60px;
+
+            &__point {
+                padding-bottom: 15px;
+            }
+
+            &__link {
+                color: @black;
+                font-family: 'Montserrat';
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                transition: @transition;
+                text-decoration: none;
+                padding-bottom: 15px;
+            }
+
+            &__link:hover {
+                color: @blue;
+                border-bottom: 1px solid @blue;
+            }
+        }
+
+        .filter-form {
+            justify-content: center;
+        }
+    }
+
+    .our-tours {
+        margin-bottom: 90px;
+
+        .title {
+            margin-bottom: 40px;
+        }
+
+        .tours-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+
+            .tour {
+                font-family: 'Montserrat';
+                line-height: normal;
+                font-style: normal;
+                border-radius: 10px;
+                background-color: @white;
+                box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+                display: flex;
+                flex-wrap: wrap;
+
+                &__img {
+                    background-image: url(/img/tour__bg__mobile.jpg);
+                    background-repeat: no-repeat;
+                    width: 380px;
+                    height: 240px;
+                    margin: 0 auto;
+                }
+
+                .tour-info {
+                    padding: 24px 39px 66px 36px;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    &__type {
+                        color: @yellow;
+                        font-size: 13px;
+                        font-weight: 500;
+                        margin-bottom: 1px;
+                        width: 100%;
+                    }
+
+                    &__title {
+                        color: @black;
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+
+                    &__description {
+                        color: @black;
+                        font-size: 13px;
+                        font-weight: 500;
+                        padding-left: 20px;
+                        border-left: 3px solid @blue;
+                        margin-bottom: 56px;
+                    }
+
+                    
+
+                    .buttons-block {
+                        gap: 10px;
+                    }
+
+                    .button {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .page-switch {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        &__link {
+            text-decoration: none;
+            color: @black;
+            transition: @transition;
+            margin-right: 12px;
+
+            &:nth-child(4) {
+                margin-right: 5px;
+            }
+
+            &:hover {
+                color: @blue;
+            }
+        }
+
+        &__icon:nth-child(1) {
+            margin-right: 5px;
+        }
+    }
+}
+
+// АДАПТИВ 
+
+/* Vertical Tablet */
+@media (min-width: 768px) {
+    .header-excursions {
+        background-image: url(/img/excursions__tablet__bg.jpg);
+        padding-bottom: 226px;
+
+        .header__title {
+            text-align: start;
+        }
+
+        .header-logo {
+            margin-bottom: 140px;
+        }
+    }
+
+    .excursions-content {
+        background-color: @gray-2;
+        padding: 100px 0 150px;
+
+        .search {
+            padding: 60px 60px 83px;
+            margin-bottom: 100px;
+
+            .excursions-list {
+                gap: 20px;
+
+                &__point {
+                    padding-bottom: 13px;
+                }
+
+                &__link {
+                    font-size: 14px;
+                    padding-bottom: 13px;
+                }
+            }
+        }
+
+        .our-tours {
+            .tours-list {
+                .tour {
+                    &__img {
+                        background-image: url(/img/tour__bg__tablet.jpg);
+                        width: 238px;
+                        margin: 0;
+                        height: 444px;
+                    }
+
+                    .tour-info {
+                        padding: 27px 33px 57px 43px;
+                        width: 61%;
+
+                        &__description {
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Desctop */
+@media (min-width: 1200px) {
+    .header-excursions {
+        background-image: url(/img/header-excursions__bg.jpg);
+        padding-bottom: 59px;
+
+        .header-logo {
+            margin-bottom: 57px;
+        }
+    }
+
+    .excursions-content {
+        padding: 40px 0 85px;
+
+        .search {
+            padding: 60px;
+            margin-bottom: 38px;
+
+            .filter-form {
+                justify-content: center;
+            }
+        }
+
+        .our-tours {
+            margin-bottom: 40px;
+
+            .tours-list {
+                gap: 20px;
+
+                .tour {
+                    &__img {
+                        background-image: url(/img/tour__bg__desctop.jpg);
+                        height: 303px;
+                    }
+
+                    .tour-info {
+                        padding: 27px 43px;
+                        width: 53%;
+
+                        &__type {
+                            font-size: 12px;
+                            margin-bottom: 2px;
+                        }
+
+                        &__description {
+                            font-size: 12px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
