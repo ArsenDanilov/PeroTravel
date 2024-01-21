@@ -49,8 +49,8 @@
   font-style: normal;
   font-weight: 900;
   line-height: 73px;
-  -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px #fff;
+  font-family: 'Montserrat';
 }
 .header-main .link-button_long {
   min-width: 250px;
