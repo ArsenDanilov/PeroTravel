@@ -270,9 +270,11 @@
             margin-bottom: 40px;
 
             .tours-list {
-                gap: 20px;
-
                 .tour {
+                    &:not(:last-child){
+                        margin-bottom: 20px;
+                    }
+
                     &__img {
                         background-image: url(/img/tour__bg__desctop.jpg);
                         height: 303px;

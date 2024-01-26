@@ -724,8 +724,8 @@
   .excursions-content .our-tours {
     margin-bottom: 40px;
   }
-  .excursions-content .our-tours .tours-list {
-    gap: 20px;
+  .excursions-content .our-tours .tours-list .tour:not(:last-child) {
+    margin-bottom: 20px;
   }
   .excursions-content .our-tours .tours-list .tour__img {
     background-image: url(/img/tour__bg__desctop.jpg);
