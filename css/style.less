@@ -137,6 +137,10 @@ summary::marker {
         display: flex;
         width: 100%;
 
+        .menu__point {
+            color: @white;
+        }
+
         .menu__link {
             text-decoration: none;
             color: @white;
@@ -145,6 +149,9 @@ summary::marker {
             display: block;
         }
 
+        .menu__point:active,
+        .menu__link:active,
+        .menu__point:hover,
         .menu__link:hover {
             color: @yellow;
         }
@@ -647,22 +654,6 @@ summary::marker {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 768px) {
 
     .header__title {
@@ -952,7 +943,4 @@ summary::marker {
             }
         }
     }
-
-
-    
 }

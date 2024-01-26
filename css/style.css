@@ -279,6 +279,7 @@
   background-image: url(/img/any-questions_mobile_bg.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   font-family: 'Montserrat';
   font-style: normal;
   line-height: normal;
@@ -1302,6 +1303,9 @@ summary::marker {
   display: flex;
   width: 100%;
 }
+.menu__nav .menu__list .menu__point {
+  color: #fff;
+}
 .menu__nav .menu__list .menu__link {
   text-decoration: none;
   color: #fff;
@@ -1309,6 +1313,9 @@ summary::marker {
   padding: 10px;
   display: block;
 }
+.menu__nav .menu__list .menu__point:active,
+.menu__nav .menu__list .menu__link:active,
+.menu__nav .menu__list .menu__point:hover,
 .menu__nav .menu__list .menu__link:hover {
   color: #FFC700;
 }
