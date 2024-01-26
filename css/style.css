@@ -579,9 +579,6 @@
 }
 .excursions-content .our-tours .tours-list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
 }
 .excursions-content .our-tours .tours-list .tour {
   font-family: 'Montserrat';
@@ -592,6 +589,9 @@
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-wrap: wrap;
+}
+.excursions-content .our-tours .tours-list .tour:not(:last-child) {
+  margin-bottom: 40px;
 }
 .excursions-content .our-tours .tours-list .tour__img {
   background-image: url(/img/tour__bg__mobile.jpg);
@@ -1223,9 +1223,6 @@ summary::marker {
   width: 100%;
   position: relative;
 }
-.active {
-  color: #FFC700;
-}
 .header-logo {
   padding-top: 27px;
 }
@@ -1316,10 +1313,7 @@ summary::marker {
   padding: 10px;
   display: block;
 }
-.menu__nav .menu__list .menu__point:active,
-.menu__nav .menu__list .menu__link:active,
-.menu__nav .menu__list .menu__point:hover,
-.menu__nav .menu__list .menu__link:hover {
+.menu__nav .menu__list li.active {
   color: #FFC700;
 }
 .link-button {
