@@ -1223,6 +1223,9 @@ summary::marker {
   width: 100%;
   position: relative;
 }
+.active {
+  color: #FFC700;
+}
 .header-logo {
   padding-top: 27px;
 }
